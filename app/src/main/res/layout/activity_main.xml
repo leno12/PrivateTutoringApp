@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232121"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="2">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.15">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Categories"
+    android:textColor="@android:color/holo_orange_dark"
+    android:textStyle="bold"
+    android:textSize="@dimen/_24sdp"
+    android:fontFamily="@font/bad_script"
+    android:gravity="center"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#232121"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:onClick="openPhysicsCourses">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/new_physics"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bad_script"
+                        android:gravity="center"
+                        android:text="Physics"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="openMathCourses"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/math"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bad_script"
+                        android:gravity="center"
+                        android:text="Math"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232121"
+                android:layout_marginTop="15dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:onClick="openProgrammingCourses">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/programming"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bad_script"
+                        android:gravity="center"
+                        android:text="Programming"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:onClick="openChemistryCourses">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/chemistry"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bad_script"
+                        android:gravity="center"
+                        android:text="Chemistry"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232121"
+                android:layout_marginTop="15dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:onClick="openLanguageCourses">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/languages"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bad_script"
+                        android:gravity="center"
+                        android:text="Languages"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:onClick="openMusicCourses">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/music_last"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bad_script"
+                        android:gravity="center"
+                        android:text="Music"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1.85">
+        <include layout="@layout/bottom_bar_activity"></include>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
